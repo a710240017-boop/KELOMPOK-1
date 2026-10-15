@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<style>
+    #liveMap {
+        width: 100%;
+        height: 400px;
+        border-radius: 12px;
+        margin-top: 20px;
+    }
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temukan Dunia Anda</title>
+
+    <!-- Favicon globe -->
+    <link rel="icon" href="https://edube.org/uploads/media/default/0001/04/web-favicon.png">
+
+    <!-- File JavaScript eksternal -->
+    <script src="java script modul 6.js" defer></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            background-color: #eaf6ff;
+            color: #234;
+        }
+
+        header {
+            background-color: #1479a8;
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        button {
+            background-color: #087e8b;
+            color: white;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: #055c66;
+        }
+
+        .map-container {
+            margin: 25px auto;
+            max-width: 1000px;
+        }
+
+        .world-map {
+            width: 100%;
+            height: auto;
+        }
+
+        #info {
+            background-color: white;
+            padding: 15px;
+            margin: 20px auto;
+            max-width: 700px;
+            border-radius: 10px;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: #456;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>&#x1F30D; Temukan Dunia Anda</h1>
+        <p>
+            Jelajahi berbagai benua dan temukan sungai, pegunungan,
+            serta landmark terkenal di dunia.
+        </p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Jelajahi Peta Dunia</h2>
+            <p>
+                Klik salah satu wilayah benua pada peta untuk mempelajari
+                keunikan geografisnya.
+            </p>
+
+            <!-- Tombol geolokasi --> 
+            <h2>📍 Peta Lokasi Live</h2>
+            <button id="getLocation" type="button">
+                Temukan Lokasi Saya
+            </button>
+            
+            <div id="info" aria-live="polite">
+                Informasi benua akan ditampilkan di sini.
+            </div>
+             <div id="liveMap"></div> 
+        </section>
+
+        <section class="map-container">
+            <h2>Peta Interaktif</h2>
+
+            <!-- Gambar peta dunia -->
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg"
+                alt="Peta dunia yang menunjukkan berbagai benua"
+                usemap="#worldmap"
+                class="world-map"
+                id="worldImage"
+            >
+
+            <!-- Area benua yang dapat diklik -->
+            <map name="worldmap">
+
+                <area
+                    alt="Amerika Utara"
+                    title="Amerika Utara"
+                    id="amerika utara"
+                    shape="rect"
+                    coords="386,283,41,17"
+                    href="#"
+                >
+
+                <area
+                    alt="Amerika Selatan"
+                    title="Amerika Selatan"
+                    id="amerika selatan"
+                    shape="rect"
+                    coords="209,501,358,288"
+                    href="#"
+                >
+
+                <area
+                    alt="Eropa"
+                    title="Eropa"
+                    id="eropa"
+                    shape="rect"
+                    coords="391,68,505,217"
+                    href="#"
+                >
+
+                <area
+                    alt="Afrika"
+                    title="Afrika"
+                    id="afrika"
+                    shape="rect"
+                    coords="533,217,387,448"
+                    href="#"
+                >
+
+                <area
+                    alt="Asia"
+                    title="Asia"
+                    id="asia"
+                    shape="rect"
+                    coords="893,153,506,1"
+                    href="#"
+                >
+
+                <area
+                    alt="Australia dan Oseania"
+                    title="Australia dan Oseania"
+                    id="australia dan oseania"
+                    shape="rect"
+                    coords="679,353,872,480"
+                    href="#"
+                >
+
+            </map>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Temukan Dunia Anda | Belajar Geografi dengan Interaktif</p>
+    </footer>
+
+</body>
+</html>

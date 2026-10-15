@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sekolah Sunnydale</title>
+
+    <style>
+        /* Pengaturan halaman */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* Judul utama */
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1E90FF;
+            text-align: center;
+        }
+
+        /* Judul setiap bagian */
+        h2 {
+            color: #24527a;
+            font-weight: bold;
+            border-bottom: 2px solid #d6e4f0;
+            padding-bottom: 5px;
+        }
+
+        /* Bagian misi sekolah */
+        .mission {
+            background-color: #ffffff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        /* Bagian acara mendatang */
+        #upcoming-events {
+            background-color: #FFFFE0;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        /* Daftar acara */
+        li {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        /* Acara luar ruangan */
+        .outdoor {
+            background-color: #AFEEEE;
+            padding: 5px;
+            border: 1px solid #B0E0E6;
+            border-radius: 4px;
+        }
+
+        /* Kotak informasi kontak */
+        .section {
+            background-color: #f8f3f3;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #dddddd;
+        }
+
+        /* Tautan kontak */
+        a {
+            color: #24527a;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #1E90FF;
+            text-decoration: underline;
+        }
+
+        /* Bagian bawah halaman */
+        footer {
+            text-align: center;
+            margin-top: 25px;
+            color: #666666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Selamat Datang di Sekolah Sunnydale</h1>
+        <p style="text-align: center;">
+            Tempat untuk belajar, berkembang, dan meraih prestasi bersama.
+        </p>
+    </header>
+
+    <main>
+
+        <!-- Bagian Pernyataan Misi -->
+        <section class="mission">
+            <h2 style="color: #32CD32;">Pernyataan Misi</h2>
+
+            <p>
+                Sekolah Sunnydale berkomitmen memberikan pendidikan
+                berkualitas, mengembangkan kreativitas, dan membentuk
+                siswa yang bertanggung jawab. Kami berusaha menciptakan
+                lingkungan belajar yang aman dan nyaman agar setiap
+                siswa dapat mencapai potensi terbaiknya.
+            </p>
+        </section>
+
+        <!-- Bagian Acara Mendatang -->
+        <section>
+            <h2 id="upcoming-events"
+                style="color: #FFA07A;">
+                Acara Mendatang
+            </h2>
+
+            <p>
+                Ikuti berbagai kegiatan menarik yang diselenggarakan
+                oleh Sekolah Sunnydale!
+            </p>
+
+            <ul>
+                <li data-event-type="indoor"
+                    title="Jenis Acara: Dalam Ruangan">
+                    Pameran Sains -
+                    <span style="font-weight: bold; color: red;">
+                        10 Juni
+                    </span>
+                </li>
+
+                <li data-event-type="indoor"
+                    title="Jenis Acara: Dalam Ruangan">
+                    Pertemuan Orang Tua dan Guru -
+                    <span style="font-weight: bold; color: red;">
+                        15 Juni
+                    </span>
+                </li>
+
+                <li class="outdoor"
+                    data-event-type="outdoor"
+                    title="Jenis Acara: Luar Ruangan">
+                    Pameran Seni -
+                    <span style="font-weight: bold; color: red;">
+                        18 Juni
+                    </span>
+                </li>
+
+                <li class="outdoor"
+                    data-event-type="outdoor"
+                    title="Jenis Acara: Luar Ruangan">
+                    Hari Olahraga -
+                    <span style="font-weight: bold; color: red;">
+                        20 Juni
+                    </span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Bagian Hubungi Kami -->
+        <section>
+            <h2 style="color: #20B2AA;">Hubungi Kami</h2>
+
+            <div class="section">
+                <p>
+                    Jika Anda memiliki pertanyaan atau membutuhkan
+                    informasi lebih lanjut, silakan hubungi kami.
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:info@sunnydaleschool.com"
+                       title="Klik untuk menyalin email">
+                        info@sunnydaleschool.com
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Telepon:</strong>
+                    <a href="tel:+1234567890"
+                       title="Klik untuk menyalin email">
+                        +1 234 567 890
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Alamat:</strong>
+                    123 Jalan Sekolah, Sunnydale
+                </p>
+            </div>
+
+            <!-- Bayangkan mengklik di sini akan menampilkan pesan:
+                 'Terima kasih telah menghubungi kami!' -->
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sekolah Sunnydale. Hak cipta dilindungi.</p>
+    </footer>
+
+</body>
+</html>

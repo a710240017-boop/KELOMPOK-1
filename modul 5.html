@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Harbor Light Community Center</title>
+
+    <style>
+        /* Pengaturan dasar halaman */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f4f7f9;
+        }
+
+        /* Header halaman */
+        header {
+            background-color: #e1edf2;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .center-and-space-content {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .center-and-space-content img {
+            max-width: 180px;
+            height: auto;
+        }
+
+        /* Navigasi */
+        nav {
+            background-color: #24566b;
+            padding: 12px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            text-decoration: underline;
+        }
+
+        /* Konten utama */
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #24566b;
+        }
+
+        /* Gambar pusat komunitas */
+        .community-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Banner dekoratif */
+        .banner {
+            display: block;
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #e1edf2;
+            text-align: center;
+            padding: 20px;
+        }
+
+        a {
+            color: #176b87;
+        }
+
+        nav a {
+            color: white;
+        }
+
+        a:focus {
+            outline: 2px solid #e09f3e;
+            outline-offset: 3px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header dan logo -->
+    <header>
+        <div class="center-and-space-content">
+            <img src="logo.jpg"
+                 alt="Logo Pusat Komunitas Harbor Light">
+        </div>
+
+        <h1>Selamat Datang di Harbor Light Community Center</h1>
+
+        <p>
+            Tempat untuk terhubung, belajar, dan berkembang bersama.
+        </p>
+    </header>
+
+    <!-- Banner dekoratif -->
+    <img src="banner.jpg"
+         alt=""
+         aria-hidden="true"
+         class="banner">
+
+    <!-- Navigasi utama -->
+    <nav role="navigation" aria-label="Navigasi utama">
+        <ul>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#services">Layanan Kami</a></li>
+            <li><a href="#events">Gabung Acara Kami</a></li>
+            <li><a href="#contact">Hubungi Kami</a></li>
+        </ul>
+    </nav>
+
+    <!-- Konten utama -->
+    <main>
+
+        <!-- Tentang Kami -->
+        <section id="about">
+            <h2>Tentang Kami</h2>
+
+            <p>
+                Harbor Light Community Center adalah pusat komunitas
+                yang terbuka bagi masyarakat dari berbagai usia.
+                Kami bertujuan membangun komunitas yang lebih kuat
+                melalui pendidikan, kegiatan sosial, dan pengembangan diri.
+            </p>
+
+            <img src="community-center.jpg"
+                 alt="Orang-orang Pusat Komunitas Harbor Light"
+                 class="community-image">
+        </section>
+
+        <!-- Layanan Kami -->
+        <section id="services">
+            <h2>Layanan Kami</h2>
+
+            <p>
+                Kami menyediakan berbagai layanan dan program
+                untuk mendukung kebutuhan masyarakat setempat.
+            </p>
+
+            <ul>
+                <li>Program pendidikan dan pelatihan</li>
+                <li>Program pengembangan anak muda</li>
+                <li>Kegiatan dukungan masyarakat</li>
+                <li>Program sosial dan rekreasi</li>
+            </ul>
+        </section>
+
+        <!-- Gabung Acara Kami -->
+        <section id="events">
+            <h2>Gabung Acara Kami</h2>
+
+            <p>
+                Ikuti kegiatan dan acara menarik bersama
+                anggota komunitas lainnya.
+            </p>
+
+            <!-- Informasi acara menggunakan Schema.org -->
+            <section itemscope
+                     itemtype="http://schema.org/Event">
+
+                <h3 itemprop="name">Festival Musim Panas Tahunan</h3>
+
+                <p itemprop="description">
+                    Bergabunglah dalam Festival Musim Panas Tahunan
+                    yang menghadirkan hiburan, aktivitas komunitas,
+                    dan kesempatan untuk menjalin hubungan dengan
+                    masyarakat setempat.
+                </p>
+
+                <p>
+                    <strong>Nama Acara:</strong>
+                    <strong>Festival Musim Panas Tahunan</strong>
+                    <br>
+                    <strong>Waktu:</strong> 10.00–17.00
+                </p>
+
+                <p>
+                    <strong>Tanggal:</strong>
+                    <time itemprop="startDate"
+                          datetime="2050-06-15T10:00">
+                        15 Juni 2050
+                    </time>
+                </p>
+
+            </section>
+        </section>
+
+        <!-- Hubungi Kami -->
+        <section id="contact">
+            <h2>Hubungi Kami</h2>
+
+            <p>
+                Jika Anda memiliki pertanyaan mengenai layanan
+                atau program kami, silakan hubungi kami.
+            </p>
+
+            <p>
+                Email:
+                <a href="mailto:info@harborlight.com">
+                    info@harborlight.com
+                </a>
+            </p>
+
+            <p>
+                Kami siap membantu Anda mendapatkan informasi
+                lebih lanjut tentang kegiatan komunitas.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer halaman -->
+    <footer>
+        <p>&copy; 2050 Harbor Light Community Center</p>
+    </footer>
+
+</body>
+</html>

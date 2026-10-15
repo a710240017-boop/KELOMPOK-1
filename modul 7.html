@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Petualangan Global</title>
+    <!-- Favicon placeholder -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+
+    <!-- Header & Navigasi -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-indigo-600">
+                    Petualangan Global
+                </div>
+                <nav>
+                    <ul class="flex space-x-6 text-sm font-medium text-gray-600">
+                        <li><a href="#" class="hover:text-indigo-600 transition">Beranda</a></li>
+                        <li><a href="#kota" class="hover:text-indigo-600 transition">Kota Favorit</a></li>
+                        <li><a href="#galeri" class="hover:text-indigo-600 transition">Galeri</a></li>
+                        <li><a href="#kontak" class="hover:text-indigo-600 transition">Kontak</a></li>
+                        <li><a href="#berlangganan" class="hover:text-indigo-600 transition">Berlangganan</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex flex-col justify-center items-center text-center text-white mt-16 px-4">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">Perjalanan Persahabatan: Menjelajahi Dunia Bersama</h1>
+        <p class="text-xl md:text-2xl mb-8 max-w-3xl drop-shadow-md">Tidak ada yang lebih indah dari menemukan sudut-sudut baru di dunia ini bersama sahabat. Bersiaplah untuk petualangan yang tak terlupakan.</p>
+        <a href="#kota" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full transition transform hover:scale-105 shadow-lg">Mulai Menjelajah</a>
+    </section>
+
+    <!-- Pilihan Kota Favorit -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="kota">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">3 Kota Favorit Saya di Dunia</h2>
+            <p class="text-lg text-gray-600">Menelusuri keajaiban budaya, kuliner, dan arsitektur di tiga benua berbeda.</p>
+        </div>
+
+        <div class="space-y-24">
+            <!-- Kota 1: Paris -->
+            <section class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <figure class="rounded-xl overflow-hidden shadow-2xl">
+                        <!-- Gambar spesifik Montmartre Art / Paris Street -->
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="Jalanan di Montmartre, Paris" class="w-full h-80 object-cover hover:scale-110 transition duration-500">
+                        <figcaption class="bg-white p-4 text-sm text-gray-600 text-center border-t">Sudut jalanan puitis di Montmartre, pusat seni Paris.</figcaption>
+                    </figure>
+                </div>
+                <div class="md:w-1/2">
+                    <header class="mb-4">
+                        <h2 class="text-3xl font-bold text-gray-900">Paris, Prancis</h2>
+                    </header>
+                    <p class="text-gray-600 mb-4">Paris bukan sekadar kota, melainkan sebuah panggung seni raksasa. Hubungan saya dengan kota ini bermula dari kekaguman pada karya seni jalanan dan pelukis di sekitar Place du Tertre.</p>
+                    <div class="space-y-4">
+                        <section>
+                            <h3 class="text-xl font-semibold text-indigo-600">Pengalaman Budaya</h3>
+                            <p class="text-gray-600 text-sm">Menghabiskan sore di kafe pinggir jalan sambil melihat para seniman melukis potret kehidupan kota.</p>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Kota 2: Tokyo -->
+            <section class="flex flex-col md:flex-row-reverse items-center gap-12">
+                <div class="md:w-1/2">
+                    <figure class="rounded-xl overflow-hidden shadow-2xl">
+                        <!-- Gambar spesifik Kuliner Jepang / Sushi -->
+                        <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80" alt="Kuliner Jepang" class="w-full h-80 object-cover hover:scale-110 transition duration-500">
+                        <figcaption class="bg-white p-4 text-sm text-gray-600 text-center border-t">Keaslian rasa dalam setiap hidangan kuliner Jepang.</figcaption>
+                    </figure>
+                </div>
+                <div class="md:w-1/2">
+                    <header class="mb-4">
+                        <h2 class="text-3xl font-bold text-gray-900">Tokyo, Jepang</h2>
+                    </header>
+                    <p class="text-gray-600 mb-4">Perpaduan sempurna antara tradisi kuno dan teknologi futuristik. Tokyo mengajarkan saya tentang harmoni dan kedisiplinan yang memukau.</p>
+                    <div class="space-y-4">
+                        <section>
+                            <h3 class="text-xl font-semibold text-indigo-600">Kuliner</h3>
+                            <p class="text-gray-600 text-sm">Menikmati sushi segar langsung dari koki lokal di pasar tradisional adalah pengalaman tak terlupakan.</p>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Kota 3: New York -->
+            <section class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <figure class="rounded-xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=800&q=80" alt="Gedung Pencakar Langit New York" class="w-full h-80 object-cover hover:scale-110 transition duration-500">
+                        <figcaption class="bg-white p-4 text-sm text-gray-600 text-center border-t">Hutan beton yang menyimpan jutaan mimpi.</figcaption>
+                    </figure>
+                </div>
+                <div class="md:w-1/2">
+                    <header class="mb-4">
+                        <h2 class="text-3xl font-bold text-gray-900">New York City, AS</h2>
+                    </header>
+                    <p class="text-gray-600 mb-4">Kota yang tidak pernah tidur. Energi yang mengalir di jalanan Manhattan membuat saya selalu ingin melangkah lebih jauh.</p>
+                    <div class="space-y-4">
+                        <section>
+                            <h3 class="text-xl font-semibold text-indigo-600">Tempat Terkenal</h3>
+                            <p class="text-gray-600 text-sm">Berjalan di Times Square di malam hari memberikan sensasi berada di pusat dunia.</p>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Bagian Galeri -->
+    <section id="galeri" class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <header class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">Galeri Perjalanan</h1>
+                <p class="text-lg text-gray-600">Momen-momen yang terekam dalam lensa, membawa kembali memori indah.</p>
+            </header>
+            <div class="photo-gallery">
+                <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    <li>
+                        <figure class="bg-white rounded-xl shadow-lg overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=600&q=80" alt="Menara Eiffel" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                            <figcaption class="p-4 text-center text-sm text-gray-600">Keagungan Menara Eiffel di senja hari.</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="bg-white rounded-xl shadow-lg overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=600&q=80" alt="Jalanan Tokyo" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                            <figcaption class="p-4 text-center text-sm text-gray-600">Lampu neon yang menghidupkan malam di Shibuya.</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="bg-white rounded-xl shadow-lg overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1522083165195-3424ed129620?auto=format&fit=crop&w=600&q=80" alt="Taksi Kuning NY" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                            <figcaption class="p-4 text-center text-sm text-gray-600">Ikon klasik jalanan New York yang sibuk.</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Area Interaksi (Kontak & Newsletter) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-2 gap-12">
+        <!-- Formulir Kontak -->
+        <div id="kontak" class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Bagikan Cerita Anda</h2>
+            <form method="post" action="#" class="space-y-6">
+                <div>
+                    <label for="nama" class="block text-sm font-medium text-gray-700 mb-1">Nama Anda</label>
+                    <input type="text" id="nama" name="nama" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Anda</label>
+                    <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition" required>
+                </div>
+                <div>
+                    <label for="pesan" class="block text-sm font-medium text-gray-700 mb-1">Pesan / Cerita</label>
+                    <textarea id="pesan" name="pesan" rows="4" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg transition">Kirim Pesan</button>
+            </form>
+        </div>
+
+        <!-- Berlangganan Newsletter -->
+        <div id="berlangganan" class="bg-indigo-50 p-8 rounded-xl shadow-lg border border-indigo-100 flex flex-col justify-center">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Bergabung dengan Perjalanan</h2>
+                <p class="text-gray-600">Dapatkan update terbaru, tips perjalanan, dan cerita inspiratif langsung ke kotak masuk Anda.</p>
+            </div>
+            <form method="post" action="#" class="space-y-4">
+                <div>
+                    <label for="newsletter-email" class="sr-only">Alamat Email</label>
+                    <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Masukkan alamat email Anda" class="w-full border border-gray-300 rounded-lg p-4 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition" required>
+                </div>
+                <div class="flex items-start">
+                    <div class="flex items-center h-5">
+                        <input id="persetujuan" name="persetujuan" type="checkbox" class="w-4 h-4 text-indigo-600 bg-gray-100 border-gray-300 rounded focus:ring-indigo-500" required>
+                    </div>
+                    <label for="persetujuan" class="ml-2 text-sm text-gray-600">Saya setuju menerima buletin sesekali. (Bebas spam!)</label>
+                </div>
+                <button type="submit" class="w-full bg-gray-900 hover:bg-black text-white font-bold py-4 px-4 rounded-lg transition">Berlangganan Sekarang</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 border-b border-gray-700 pb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Blog Petualangan Global</h3>
+                    <p class="text-gray-400 text-sm">Menjelajahi dunia, satu kota pada satu waktu. Mari temukan keindahan di setiap sudut bumi bersama-sama.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Tautan Penting</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:text-white transition">Kebijakan Privasi</a></li>
+                        <li><a href="#" class="hover:text-white transition">Syarat & Ketentuan Penggunaan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Hubungi Kami</h3>
+                    <p class="text-gray-400 text-sm mb-4">Punya pertanyaan atau ingin berkolaborasi? Sapa kami!</p>
+                    <a href="mailto:halo@petualanganglobal.com" class="text-indigo-400 hover:text-indigo-300 transition">halo@petualanganglobal.com</a>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+                <p>&copy; 2035 Global Adventures Blog. Hak Cipta Dilindungi.</p>
+                <!-- Ikon Sosial Media Sederhana (Teks) -->
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition" aria-label="Faceblock">Faceblock</a>
+                    <a href="#" class="hover:text-white transition" aria-label="Tweety">Tweety</a>
+                    <a href="#" class="hover:text-white transition" aria-label="Instadrama">Instadrama</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
